@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222222;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.buscador {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.buscador input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #222222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+#mensaje {
+    min-height: 20px;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.oculto {
+    display: none;
+}
+
+.estado {
+    margin-bottom: 15px;
+    color: #555555;
+}
+
+.datos {
+    display: flex;
+    gap: 10px;
+}
+
+.datos div {
+    flex: 1;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.datos span {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.datos strong {
+    font-size: 22px;
+}
+
+.tabla {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    .buscador,
+    .datos {
+        flex-direction: column;
+    }
+}

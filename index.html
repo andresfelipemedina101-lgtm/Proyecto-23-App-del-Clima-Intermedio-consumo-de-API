@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación del Tiempo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Aplicación del Tiempo</h1>
+
+        <div class="buscador">
+            <input type="text" id="ubicacion" placeholder="Escribe una ciudad, por ejemplo: Bogota">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnActualizar">Actualizar</button>
+        </div>
+
+        <p id="mensaje"></p>
+
+        <section id="actual" class="tarjeta oculto">
+            <h2 id="ciudad"></h2>
+            <p class="estado" id="estado"></p>
+            <div class="datos">
+                <div>
+                    <span>Temperatura</span>
+                    <strong id="temperatura"></strong>
+                </div>
+                <div>
+                    <span>Viento</span>
+                    <strong id="viento"></strong>
+                </div>
+                <div>
+                    <span>Probabilidad de lluvia</span>
+                    <strong id="lluvia"></strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccionAnteriores" class="tarjeta oculto">
+            <h2>Últimas 24 horas</h2>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Estado</th>
+                            <th>Temp.</th>
+                            <th>Viento</th>
+                            <th>Lluvia</th>
+                        </tr>
+                    </thead>
+                    <tbody id="anteriores"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="seccionSiguientes" class="tarjeta oculto">
+            <h2>Próximas 24 horas</h2>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Estado</th>
+                            <th>Temp.</th>
+                            <th>Viento</th>
+                            <th>Lluvia</th>
+                        </tr>
+                    </thead>
+                    <tbody id="siguientes"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
